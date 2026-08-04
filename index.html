@@ -3,6 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function(m,e,t,r,i,k,a){
+            m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();
+            for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+            k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+        })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=111293283', 'ym');
+
+        ym(111293283, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/111293283" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
     <title>МФ-курьер | Склад фулфилмента в Кемерово</title>
     
     <!-- Favicon -->
@@ -285,16 +300,6 @@
 
         .checkbox-group input {
             margin-top: 3px;
-            flex-shrink: 0;
-        }
-
-        .checkbox-group a {
-            color: var(--primary);
-            text-decoration: underline;
-        }
-
-        .checkbox-group a:hover {
-            color: var(--primary-dark);
         }
 
         /* --- Problem / Solution --- */
@@ -596,91 +601,12 @@
             background: #ddd;
         }
 
-        .footer-links {
-            margin-top: 20px;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        .footer-links a {
-            color: #90a4ae;
-            font-size: 0.9rem;
-            transition: 0.3s;
-        }
-
-        .footer-links a:hover {
-            color: var(--primary);
-        }
-
         .copyright {
             text-align: center;
             border-top: 1px solid #37474f;
             padding-top: 20px;
             font-size: 0.9rem;
             color: #90a4ae;
-        }
-
-        /* --- Modal --- */
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 2000;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0,0,0,0.7);
-            overflow-y: auto;
-        }
-
-        .modal-content {
-            background-color: white;
-            margin: 5% auto;
-            padding: 40px;
-            border-radius: var(--radius);
-            width: 90%;
-            max-width: 800px;
-            position: relative;
-            max-height: 80vh;
-            overflow-y: auto;
-        }
-
-        .close-modal {
-            position: absolute;
-            right: 20px;
-            top: 20px;
-            font-size: 2rem;
-            cursor: pointer;
-            color: var(--text-light);
-            transition: 0.3s;
-        }
-
-        .close-modal:hover {
-            color: var(--primary);
-        }
-
-        .modal-content h2 {
-            color: var(--text-main);
-            margin-bottom: 20px;
-            font-size: 1.8rem;
-        }
-
-        .modal-content h3 {
-            color: var(--text-main);
-            margin: 20px 0 10px;
-            font-size: 1.2rem;
-        }
-
-        .modal-content p, .modal-content li {
-            color: var(--text-light);
-            margin-bottom: 10px;
-            line-height: 1.6;
-        }
-
-        .modal-content ul {
-            padding-left: 20px;
-            margin-bottom: 15px;
         }
 
         /* --- Responsive --- */
@@ -747,7 +673,7 @@
 
             <div class="hero-form-card fade-in-up delay-200">
                 <h3 style="margin-bottom: 20px; text-align: center;">Получить расчет стоимости</h3>
-                <form action="https://formspree.io/f/mrennlqd" method="POST">
+                <form action="https://formspree.io/f/mbdneazr" method="POST">
                     <input type="hidden" name="_subject" value="Новая заявка: Получить расчет стоимости">
                     <input type="hidden" name="_gotcha" style="display:none">
                     <div class="form-group">
@@ -759,7 +685,7 @@
                     <button type="submit" class="btn" style="width: 100%;">Получить расчет</button>
                     <div class="checkbox-group">
                         <input type="checkbox" id="agree1" required checked>
-                        <label for="agree1">Я даю согласие на обработку персональных данных в соответствии с <a href="#" onclick="openModal(); return false;">Политикой конфиденциальности</a></label>
+                        <label for="agree1">Я согласен на обработку персональных данных</label>
                     </div>
                 </form>
             </div>
@@ -772,7 +698,7 @@
             <h2 class="section-title fade-in-up">Забудьте о рутине склада</h2>
             <div class="ps-grid">
                 <div class="ps-card ps-problem fade-in-up delay-100">
-                    <h3><i class="fa-solid fa-triangle-exclamation" style="color:#ff5252"></i> Сами не справляетесь?</h3>
+                    <h3><i class="fa-solid fa-triangle-exclamation" style="color:#ff5252"></i> Сами справляетесь?</h3>
                     <ul class="ps-list">
                         <li>Нет места для хранения товара</li>
                         <li>Тратите часы на сборку и упаковку заказов</li>
@@ -892,7 +818,7 @@
                 <h2>Скачайте прайс-лист</h2>
                 <p>Мы подготовили пакетные предложения, которые удовлетворят все ваши требования.</p>
             </div>
-            <form class="cta-form-inline fade-in-up delay-200" action="https://formspree.io/f/mrennlqd" method="POST">
+            <form class="cta-form-inline fade-in-up delay-200" action="https://formspree.io/f/mbdneazr" method="POST">
                 <input type="hidden" name="_subject" value="Новая заявка: Запрос прайс-листа">
                 <input type="hidden" name="_gotcha" style="display:none">
                 <input type="email" name="email" placeholder="Ваш Email" required>
@@ -949,7 +875,7 @@
             <div class="final-form-wrapper fade-in-up">
                 <h2 class="section-title">Начать работу</h2>
                 <p style="margin-bottom: 30px;">Оставьте заявку и получите качественные услуги для роста Вашего бизнеса</p>
-                <form action="https://formspree.io/f/mrennlqd" method="POST">
+                <form action="https://formspree.io/f/mbdneazr" method="POST">
                     <input type="hidden" name="_subject" value="Новая заявка: Начать работу">
                     <input type="hidden" name="_gotcha" style="display:none">
                     <div class="form-group">
@@ -961,7 +887,7 @@
                     <button type="submit" class="btn" style="width: 100%; font-size: 1.1rem;">Начать работу</button>
                     <div class="checkbox-group" style="justify-content: center;">
                         <input type="checkbox" id="agree2" required checked>
-                        <label for="agree2">Я даю согласие на обработку персональных данных в соответствии с <a href="#" onclick="openModal(); return false;">Политикой конфиденциальности</a></label>
+                        <label for="agree2">Согласие на обработку персональных данных</label>
                     </div>
                 </form>
             </div>
@@ -995,10 +921,6 @@
                             <a href="tel:+79001051050">+7 (900) 105-10-50</a>
                         </div>
                     </div>
-                    <div class="footer-links">
-                        <a href="#" onclick="openModal(); return false;">Политика конфиденциальности</a>
-                        <a href="#" onclick="openModal(); return false;">Согласие на обработку персональных данных</a>
-                    </div>
                 </div>
                 <div class="map-container fade-in-up delay-200">
                    <iframe src="https://yandex.ru/map-widget/v1/?ll=86.108800%2C55.346700&z=16&pt=86.108800,55.346700,pm3blm" width="100%" height="100%" frameborder="0" allowfullscreen="true"></iframe>
@@ -1010,94 +932,7 @@
         </div>
     </footer>
 
-    <!-- Privacy Policy Modal -->
-    <div id="privacyModal" class="modal">
-        <div class="modal-content">
-            <span class="close-modal" onclick="closeModal()">&times;</span>
-            <h2>Политика конфиденциальности</h2>
-            <p><strong>Дата последнего обновления:</strong> 03.08.2026</p>
-            
-            <h3>1. Общие положения</h3>
-            <p>Настоящая Политика конфиденциальности (далее — Политика) разработана в соответствии с Федеральным законом от 27.07.2006 № 152-ФЗ «О персональных данных» и определяет порядок обработки персональных данных и меры по обеспечению их безопасности, предпринимаемые МФ-курьер (далее — Оператор).</p>
-            
-            <h3>2. Состав обрабатываемых персональных данных</h3>
-            <p>Оператор обрабатывает следующие персональные данные Пользователя:</p>
-            <ul>
-                <li>Фамилия, имя, отчество;</li>
-                <li>Номер телефона;</li>
-                <li>Адрес электронной почты;</li>
-                <li>Иные данные, предоставляемые Пользователем при заполнении форм на сайте.</li>
-            </ul>
-            
-            <h3>3. Цели обработки персональных данных</h3>
-            <p>Персональные данные обрабатываются в следующих целях:</p>
-            <ul>
-                <li>Обработка заявок и запросов Пользователей;</li>
-                <li>Заключение и исполнение договоров на оказание услуг фулфилмента;</li>
-                <li>Информирование Пользователей об услугах Оператора;</li>
-                <li>Улучшение качества обслуживания клиентов.</li>
-            </ul>
-            
-            <h3>4. Правовые основания обработки</h3>
-            <p>Обработка персональных данных осуществляется на основании:</p>
-            <ul>
-                <li>Согласия субъекта персональных данных (ст. 6 ч. 1 п. 1 ФЗ-152);</li>
-                <li>Необходимости исполнения договора, стороной которого является субъект персональных данных (ст. 6 ч. 1 п. 5 ФЗ-152);</li>
-                <li>Необходимости осуществления прав и законных интересов Оператора (ст. 6 ч. 1 п. 7 ФЗ-152).</li>
-            </ul>
-            
-            <h3>5. Порядок и условия обработки</h3>
-            <p>Обработка персональных данных осуществляется с использованием средств автоматизации и без таковых. Оператор принимает необходимые правовые, организационные и технические меры для защиты персональных данных от неправомерного или случайного доступа, уничтожения, изменения, блокирования, копирования, распространения.</p>
-            
-            <h3>6. Права субъекта персональных данных</h3>
-            <p>Пользователь вправе:</p>
-            <ul>
-                <li>Получать сведения об обработке своих персональных данных;</li>
-                <li>Требовать уточнения, блокирования или уничтожения персональных данных;</li>
-                <li>Отозвать согласие на обработку персональных данных;</li>
-                <li>Обжаловать действия Оператора в уполномоченный орган по защите прав субъектов персональных данных.</li>
-            </ul>
-            
-            <h3>7. Сроки обработки</h3>
-            <p>Персональные данные обрабатываются в течение срока, необходимого для достижения целей обработки, но не более 3 (трех) лет с момента последнего взаимодействия с Пользователем, если иное не предусмотрено законодательством РФ.</p>
-            
-            <h3>8. Контакты</h3>
-            <p>По всем вопросам, связанным с обработкой персональных данных, обращайтесь:</p>
-            <ul>
-                <li>Адрес: г. Кемерово, ул. Нахимова 33б</li>
-                <li>Email: <a href="mailto:sales@mari-f.ru">sales@mari-f.ru</a></li>
-                <li>Телефон: <a href="tel:+79001051050">+7 (900) 105-10-50</a></li>
-            </ul>
-        </div>
-    </div>
-
     <script>
-        // Modal functions
-        function openModal() {
-            document.getElementById('privacyModal').style.display = 'block';
-            document.body.style.overflow = 'hidden';
-        }
-
-        function closeModal() {
-            document.getElementById('privacyModal').style.display = 'none';
-            document.body.style.overflow = 'auto';
-        }
-
-        // Close modal when clicking outside
-        window.onclick = function(event) {
-            const modal = document.getElementById('privacyModal');
-            if (event.target == modal) {
-                closeModal();
-            }
-        }
-
-        // Close modal with Escape key
-        document.addEventListener('keydown', function(event) {
-            if (event.key === 'Escape') {
-                closeModal();
-            }
-        });
-
         // Smooth scroll for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
